@@ -1,0 +1,38 @@
+.btn-primary {
+	border: 1px solid #b0d4e3;
+	background: #88bacf;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b0d4e3), to(#88bacf));
+	background: -webkit-linear-gradient(top, #b0d4e3, #88bacf);
+	background: -moz-linear-gradient(top, #b0d4e3, #88bacf);
+	background: -ms-linear-gradient(top, #b0d4e3, #88bacf);
+	background: -o-linear-gradient(top, #b0d4e3, #88bacf);
+	padding: 5px 10px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	/*-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;*/
+	/*-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;*/
+	/*box-shadow: rgba(0,0,0,1) 0 1px 0;*/
+	/*text-shadow: rgba(0,0,0,.4) 0 1px 0;*/
+	color: #000000;
+	vertical-align: middle;
+}
+
+.btn-primary:hover {
+	background: #88bacf;
+	color: #000000;
+}
+   
+.btn-primary:active {
+	/*border-top-color: #1b525c;*/
+	/*background: #1b525c;*/
+}
+
+.panel-default > .panel-heading {
+	background: #88bacf;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b0d4e3), to(#88bacf));
+	background: -webkit-linear-gradient(top, #b0d4e3, #88bacf);
+	background: -moz-linear-gradient(top, #b0d4e3, #88bacf);
+	background: -ms-linear-gradient(top, #b0d4e3, #88bacf);
+	background: -o-linear-gradient(top, #b0d4e3, #88bacf);
+}

@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}Dashboard - CommuniCode{% endblock %}
+
+{% block content %}
+    {# TRENDING BOX #}
+    <div class="col-lg-9 col-md-9" style="padding-right:0px;">
+        <div class="thumbnail" style="margin-bottom:0px; padding-left:30px; padding-right:30px; background-color:transparent; border:none;">
+            <div class="page-header" style="margin-top:0px;">
+                <h3>
+                    Trending Box
+                </h3>
+            </div>
+        </div>
+
+        {# PROJECT BOX #}
+        {% for project in projects %}
+            <div class="col-md-12">
+              <div class="col-md-12">
+              <div class="thumbnail gardient2" style="border:none;">
+                <img src="{% static "images/logos/CCLogo-300x300.png" %}" style="width:100px; height:100px;">
+                <div class="caption">
+                <h3>
+                    {{ project.name }}
+                </h3>
+                <p style="font-size:14px;">
+                    {{ project.description }}
+                </p>
+                <p>
+                    <a class="btn btn-primary gardient4" style="border:none;" role="button" href="#">Like</a>
+                    <a class="btn btn-primary gardient4" style="border:none;" role="button" href="{% url 'project_code' project_id=project.id %}">More</a>
+                </p>
+                </div>
+              </div>
+              </div>
+
+             </div>
+        {% endfor %}
+    </div>
+
+    {# RIGHT PANEL #}
+    <div class="col-lg-3 col-md-3 gardient" style="padding-left:0px; border-radius:5px;">
+
+        {# ABOUT #}
+        <div class="thumbnail" style="margin-left:15px; margin-top:0px; background-color:transparent; border:none;">
+        <div class="page-header" style="margin-top:0px; margin-bottom:0px;">
+                <h3 style="color:#fff;">
+                    About CommuniCode
+                </h3>
+            </div>
+        </div>
+        <div class="thumbnail" style="margin-left:15px; margin-top:15px; background-color:#fff;  border:none;">
+            Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever.
+        </div>
+
+        {# ANNOUNCEMENTS #}
+        <div class="thumbnail" style="margin-left:15px; margin-top:15px; background-color:transparent; border:none;">
+        <div class="page-header" style="margin-top:0px; margin-bottom:0px;">
+                <h3 style="color:#fff;">
+                    Announcements
+                </h3>
+            </div>
+        </div>
+
+        <div class="list-group" style="margin-left:15px; margin-top:15px;  border:none;">
+            <a href="#" class="list-group-item">
+                Cras justo odio
+            </a>
+            <a href="#" class="list-group-item ">Dapibus ac facilisis in</a>
+            <a href="#" class="list-group-item">Morbi leo risus</a>
+            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item">Vestibulum at eros</a>
+        </div>
+    </div>
+{% endblock %}

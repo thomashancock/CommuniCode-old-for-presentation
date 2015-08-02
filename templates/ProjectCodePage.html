@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>CommuniCode Project Code</title>
+
+		<!-- Bootstrap -->
+		<link href="./../static/css/bootstrap.min.css" rel="stylesheet">
+		<link href="./../static/css/gardient.css" rel="stylesheet"/>
+		<link href="./../static/css/ProjectAndTutorialPageSpecific.css" rel="stylesheet"/>
+		<link href="./../static/css/buttonsAndPanels.css" rel="stylesheet"/>
+	</head>
+
+	<body>
+	<nav class="navbar navbar-default prettygardient" style="	  border:none;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<img alt="Brand" src="./../static/images/logos/CCLogo-300x300.png" style="width:50px; height:50px; margin-top:-15px;">
+				</a>
+				<a class="navbar-brand" href="#" style=" color:#fff; font-weight:bold; font-size: 24px; font-family: monospace;">
+					CommuniCode
+				</a>
+			</div>
+
+			<form class="navbar-form navbar-left" role="search">
+				<button class="btn btn-default dropdown-toggle" aria-expanded="true" aria-haspopup="true" role="button" data-toggle="dropdown" href="#">
+					Categories
+					<span class="caret"></span>
+				</button>
+				<div class="form-group">
+					<input class="form-control" type="text" placeholder="Search for Projects"></input>
+				</div>
+				<button class="btn btn-default" type="submit">
+					Submit
+				</button>
+			</form>
+
+			<ul class="nav navbar-nav navbar-right" style="padding-top:7px; margin-right:20px;">
+				<li>
+					<button class="btn btn-danger">
+						Sign Up!
+					</button>
+					<button class="btn btn-warning">
+						Sign In!
+					</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+			<div class="container" style="padding-left:0px;margin-left:0px;padding-right:0px;margin-right:0px; width:98%">
+	<div class="col-md-10" style="padding-left:30px; padding-bottom:0px">
+		<h1>$PROJECT_NAME</h1>
+	</div>
+	<div class="col-md-2" style="padding-right:0px;padding-bottom:0px;margin-right:0px">
+		<div class="btn-group pull-right">
+			<!-- <r> -->
+				<button class="btn btn-primary ">Search Similar</button>
+				<button class="btn btn-primary " style="margin-right:0px">Like</button>
+			<!-- </r> -->
+		</div>
+	</div>
+	<div class="row">
+		<div class = "col-md-12">
+			<div class="thumbnail" style="margin-bottom:0px;padding-top:0px; padding-left:30px; padding-right:0px; background-color:transparent; border:none;">
+				<div class="page-header" style="margin-top:-25px;">
+					<h3>#{Category} – #{Language} – #{Tags} </h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class = "col-md-8" style="padding-left:47px">
+		<!-- Text Edit Window Start-->
+			<div class="wmd-container" style="max_width:100%">
+				<textarea id="wmd-input" class="wmd-input processed" data-min-length="" tabindex="101" rows="15" name="post-text"></textarea>
+			</div>
+			<!-- Test Edit Window End -->
+
+			<!-- Drop Down Comments Box -->
+				<div class="row">
+					<div class = "col-md-12" style="padding-left:15px; padding-right:15px; margin-right:0px">
+						<div class="panel panel-default">
+							<div class="panel-heading" id="accordion">
+								<!-- <span class="glyphicon glyphicon-comment"></span> -->
+								Comments
+								<div class="btn-group pull-right">
+									<a type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										<!-- <span class="glyphicon glyphicon-chevron-down"></span> -->
+										Expand
+									</a>
+								</div>
+							</div>
+							<div class="panel-collapse collapse" id="collapseOne">
+								<div class="panel-body">
+									<div style="margin-right: 5px;overflow-y: scroll;height: 250px">
+										<ul class="chat">
+											<li class="left clearfix">
+												<span class="chat-img pull-left">
+													<img alt="User Avatar" src="./../static/images/logos/profilethumbnail_purple.png" style="width:50px; height:50px; margin-top:0px;">
+												</span>
+												<div class="chat-body clearfix">
+													<div class="header">
+														<strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+															<span class="glyphicon glyphicon-time"></span>12 mins ago</small>
+													</div>
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+													</p>
+												</div>
+											</li>
+											<li class="right clearfix">
+												<span class="chat-img pull-right">
+													<img alt="User Avatar" src="./../static/images/logos/profilethumbnail.png" style="width:50px; height:50px; margin-top:0px;">
+												</span>
+												<div class="chat-body clearfix">
+													<div class="header">
+														<small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
+														<strong class="pull-right primary-font">Bill "Bootstrap" Turner</strong>
+													</div>
+													<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+													</p>
+												</div>
+											</li>
+											<li class="left clearfix">
+												<span class="chat-img pull-left">
+													<img alt="User Avatar" src="./../static/images/logos/profilethumbnail_purple.png" style="width:50px; height:50px; margin-top:0px;">
+												</span>
+												<div class="chat-body clearfix">
+													<div class="header">
+														<strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+														<span class="glyphicon glyphicon-time"></span>14 mins ago</small>
+													</div>
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+													</p>
+												</div>
+											</li>
+											<li class="right clearfix">
+												<span class="chat-img pull-right">
+													<img alt="User Avatar" src="./../static/images/logos/profilethumbnail.png" style="width:50px; height:50px; margin-top:0px;">
+												</span>
+												<div class="chat-body clearfix">
+													<div class="header">
+														<small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
+														<strong class="pull-right primary-font">Bill "Bootstrap" Turner</strong>
+													</div>
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div> <!-- Style tag close -->
+								</div>
+								<div class="panel-footer">
+									<div class="input-group">
+										<input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-sm" id="btn-chat">
+												Send
+											</button>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Comments Section End -->
+
+	<div class="col-md-3" style="padding-right:0px; margin-left:20px ">
+
+		<!-- Grid 3 Begins -->
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">Project Description</div>
+				<div class="panel-body">Panel content</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">Version Description</div>
+				<div class="panel-body">Panel content</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">Project Versions</div>
+				<div class="panel-body">Panel content</div>
+			</div>
+		</div>
+		<!-- Grid 3 Ends -->
+	<!-- </div> -->
+</div>
+</div>
+</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<!--
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		-->
+
+		<script src="./../static/js/jquery-2.1.4.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="./../static/js/bootstrap.min.js"></script>
+	</body>
+</html>

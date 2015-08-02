@@ -1,0 +1,38 @@
+{% load staticfiles %}
+{# TOP BAR #}
+<nav class="navbar navbar-default prettygardient" style="border:none;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="{% static "images/logos/CCLogo-300x300.png" %}" style="width:50px; height:50px; margin-top:-15px;">
+            </a>
+            <a class="navbar-brand" href="#" style="color:#fff; font-weight:bold; font-size: 24px; font-family: monospace;">
+                CommuniCode
+            </a>
+        </div>
+        <form class="navbar-form navbar-left" role="search">
+            <button class="btn btn-default dropdown-toggle" aria-expanded="true" aria-haspopup="true" role="button" data-toggle="dropdown" href="#">
+                Categories
+                <span class="caret"></span>
+            </button>
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search for Projects"/>
+            </div>
+            <button class="btn btn-default" type="submit">
+                Submit
+            </button>
+        </form>
+        <ul class="nav navbar-nav navbar-right" style="padding-top:7px; margin-right:20px;">
+            <li>
+                {% if not user.is_authenticated %}
+                <button onclick="window.location.href='{% url 'register' %}'" class="btn btn-danger">
+                    Sign Up!
+                </button>
+                <button onclick="window.location.href='{% url 'login' %}'" class="btn btn-warning">
+                    Sign In!
+                </button>
+                {% endif %}
+            </li>
+        </ul>
+    </div>
+</nav>
